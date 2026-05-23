@@ -24,4 +24,14 @@ public class ShapeSquare : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    public void SetOccupied()
+    {
+        occupiedImage.gameObject.SetActive(true);
+    }
+
+    public void UnSetOccupied()
+    {
+        occupiedImage.gameObject.SetActive(false);
+    }
+
 }
