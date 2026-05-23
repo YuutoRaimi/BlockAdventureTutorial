@@ -16,6 +16,8 @@ public class GridManager : MonoBehaviour
     private Vector2 _offset = new Vector2(0.0f, 0.0f);
     private List<GameObject> _gridSquares = new List<GameObject>();
 
+    private LineIndicator _lineIndicator;
+
     private void OnEnable()
     {
         GameEvents.CheckIfShapeCanBePlaced += CheckIfShapeCanBePlaced;
@@ -27,6 +29,7 @@ public class GridManager : MonoBehaviour
 
     void Start()
     {
+        _lineIndicator = GetComponent<LineIndicator>();
         CreateGrid();
     }
 
@@ -49,7 +52,7 @@ public class GridManager : MonoBehaviour
                 _gridSquares[_gridSquares.Count - 1].GetComponent<GridSquare>().SquareIndex = square_index;
                 _gridSquares[_gridSquares.Count - 1].transform.SetParent(this.transform);
                 _gridSquares[_gridSquares.Count - 1].transform.localScale = new Vector3(squareScale, squareScale, squareScale);
-                _gridSquares[_gridSquares.Count - 1].GetComponent<GridSquare>().SetImage(square_index % 2 == 0);
+                _gridSquares[_gridSquares.Count - 1].GetComponent<GridSquare>().SetImage(_lineIndicator.GetSquareIndex(square_index) % 2 == 0);
                 square_index++;
             }
         }
