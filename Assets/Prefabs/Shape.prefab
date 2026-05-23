@@ -49,4 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shape
   squareShapeImage: {fileID: 8579843276437337415, guid: dd05974cda71bd94e8a885e541d7ca2e, type: 3}
+  shapeSelectedScale: {x: 0.8, y: 0.8, z: 0.8}
+  offset: {x: 0, y: 700}
   CurrentShapeData: {fileID: 11400000, guid: 3f02d0d91260deb44bbbf351fdce75d9, type: 2}
