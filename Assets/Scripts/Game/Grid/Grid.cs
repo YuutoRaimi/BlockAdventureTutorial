@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class GridManager : MonoBehaviour
 {
+    public ShapeStorage shapeStorage;
     public int columns = 0;
     public int rows = 0;
     public float squaresGap = 0.1f;
@@ -109,5 +110,7 @@ public class GridManager : MonoBehaviour
                 gridSquare.ActivateSquare();
             }
         }
+
+        shapeStorage.GetCurrentSelectedShape().DeactivateShape();
     }
 }

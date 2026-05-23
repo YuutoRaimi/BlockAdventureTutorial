@@ -533,6 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a465c483bb7538449899c19f86bbdc51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grid
+  shapeStorage: {fileID: 2145765839}
   columns: 9
   rows: 9
   squaresGap: 3
