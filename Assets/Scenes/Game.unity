@@ -803,6 +803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d414bee2d5f7a524fb9d406e55dfedb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scores
+  squareTextureData: {fileID: 11400000, guid: a85f1b2dbf054aa40a47c32360e26e41, type: 2}
   ScoreText: {fileID: 2126450371}
 --- !u!1 &867330054
 GameObject:
