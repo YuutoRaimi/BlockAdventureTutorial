@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 8176516431527761927}
   - component: {fileID: 8873519408181329406}
   - component: {fileID: 9183812221538111495}
+  - component: {fileID: 3305101861560856593}
   m_Layer: 5
   m_Name: ActiveImage
   m_TagString: Untagged
@@ -357,3 +358,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3305101861560856593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5058832155111559393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3606152d2fdce45bcfbd1151ec0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActiveSquareImageSelector
+  squareTextureData: {fileID: 11400000, guid: a85f1b2dbf054aa40a47c32360e26e41, type: 2}
+  updateImageOnRechedTreshold: 0

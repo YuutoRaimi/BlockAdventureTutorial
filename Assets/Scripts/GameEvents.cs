@@ -15,4 +15,6 @@ public class GameEvents : MonoBehaviour
 
     public static Action SetShapeInactive;
     public static Action<int, int> UpdateBestScoreBar;
+
+    public static Action<Config.SquareColor> UpdateSquareColor;
 }
