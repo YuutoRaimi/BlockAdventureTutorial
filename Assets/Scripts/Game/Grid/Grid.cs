@@ -200,9 +200,9 @@ public class GridManager : MonoBehaviour
 
         var completedLines = CheckIfSquaresAreCompleted(lines);
 
-        if (completedLines > 2)
+        if (completedLines >= 2)
         {
-            //TODO: Play bonus animation
+            GameEvents.ShowCongratulationWritings();
         }
         var totalScores = 10 * completedLines;
         GameEvents.AddScores(totalScores);
